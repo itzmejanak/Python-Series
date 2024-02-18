@@ -18,7 +18,7 @@ The Python Practice Series offers a curated collection of exercises, challenges,
 To get started with the Python Practice Series, follow these steps:
 1. Clone this repository to your local machine using Git:
 
-**git clone https://github.com/itzmejanak/Python-Series.git**
+`git clone https://github.com/itzmejanak/Python-Series.git`
 
 2. Navigate to the cloned directory:
 cd python-practice-series
