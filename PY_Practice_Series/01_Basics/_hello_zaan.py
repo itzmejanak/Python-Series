@@ -13,3 +13,7 @@ janak(4)
 
 # note
 # we are also using this function into next py file [zaan.py] by importinng this function there
+
+one_name = "janak"
+next_name = "zaaan"
+thired_name = "heyyy"
