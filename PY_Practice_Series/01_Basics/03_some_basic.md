@@ -1,52 +1,75 @@
-WORKS DONE INTO PYTHON TERMIANL
+```markdown
+## Basics
 
->>> print("janak") 
-janak
+### Printing Strings and Arithmetic Operations
 
->>> 3+5
-8  
+```python
+print("janak") 
+# Output: janak
 
->>> "janak"*5
-'janakjanakjanakjanakjanak'
+3 + 5
+# Output: 8  
 
->>> score = 100
->>> score
-100 
+"janak" * 5
+# Output: 'janakjanakjanakjanakjanak'
+```
 
-this error comes because we do not create any variable
->>> tea
-Traceback (most recent call last):   
-  File "<stdin>", line 1, in <module>
-NameError: name 'tea' is not defined 
+### Variable Assignment
 
-why we do not use [from somewhere import something] for OS
+```python
+score = 100
+score
+# Output: 100 
+```
 
->> because they are core python module and we use this [from somewhere import something] here because this is our created module. [MOdule = some code that are alrady created by some one or by ourself] which we are using it
+### Importing Modules
 
->>> import os
->>> os.getcwd()         `getcdw = get current working directory`
-'C:\\Users\\janak\\OneDrive\\Desktop\\Python'
+```python
+import os
+os.getcwd()
+# Output: 'C:\\Users\\janak\\OneDrive\\Desktop\\Python'
+```
 
-# Trying to do loop by not using Indentation [TAB]
->>> for c in "chai":
-... print(c) 
-  File "<stdin>", line 2
-    print(c)
-    ^
-IndentationError: expected an indented block after 'for' statement on line 1
->>> for c in "chai":
-...     print(c)
-... c
-`We get errror we have to use indentation [TAB] for space for print(c)`
+### Understanding Module Import
 
+```python
+import os
+# No output, but the os module is imported.
+```
 
-# Trying to do loop by using Indentation [TAB]
->>>
->>> for c in "chai":
-...     print(c)     
-... 
-c
-h
-a
-i
-`We did't get errror we have to use indentation [TAB] for space for print(c)`
+## Loops and Indentation
+
+### Correct Indentation for Loop
+
+```python
+for c in "chai":
+    print(c) 
+# Output:
+# c
+# h
+# a
+# i
+```
+
+### Error Due to Indentation
+
+```python
+for c in "chai":
+    print(c) 
+# Error: IndentationError: expected an indented block after 'for' statement on line 1
+```
+
+### Misuse of Indentation
+
+```python
+for c in "chai":
+    print(c)     
+# Output:
+# c
+# h
+# a
+# i
+```
+```
+
+```
