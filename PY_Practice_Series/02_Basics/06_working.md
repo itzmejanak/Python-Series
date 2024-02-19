@@ -1,27 +1,27 @@
-### *How Python Allocates Memory
+* How Python Allocates Memory
 
- Python dynamically allocates memory when assigning values to variables.
- Variables are references to memory locations holding the assigned values.
-### Reassigning a variable points it to a new memory location without overwriting the existing one.
-### Python's garbage collector frees memory occupied by unreferenced objects eventually.
+    *Python dynamically allocates memory when assigning values to variables.
+    *Variables are references to memory locations holding the assigned values.
+    *Reassigning a variable points it to a new memory location without overwriting the existing one.
+    *Python's garbage collector frees memory occupied by unreferenced objects eventually.
 
-### How Python Frees Up Memory
+* How Python Frees Up Memory
 
-### Python reclaims memory using a garbage collector.
-### The collector deallocates memory from objects with zero references periodically.
-### Though not immediate, Python ensures efficient memory usage over time.
+    Python reclaims memory using a garbage collector.
+    The collector deallocates memory from objects with zero references periodically.
+    Though not immediate, Python ensures efficient memory usage over time.
 
-### Memory Optimization
+* Memory Optimization
 
-### Python optimizes memory by reusing space for immutable objects.
-### It shares references for identical objects, like integers and strings with the same value.
-### Copy-on-write mechanisms optimize memory when creating copies of mutable objects.
+    Python optimizes memory by reusing space for immutable objects.
+    It shares references for identical objects, like integers and strings with the same value.
+    Copy-on-write mechanisms optimize memory when creating copies of mutable objects.
 
-### Mutable vs. Immutable
+* Mutable vs. Immutable
 
-### In Python, objects are mutable or immutable:
-### Mutable objects can change post-creation, altering the object's state.
-### Immutable objects cannot change post-creation, creating new objects for modifications.
+    In Python, objects are mutable or immutable:
+    Mutable objects can change post-creation, altering the object's state.
+    Immutable objects cannot change post-creation, creating new objects for modifications.
 
 
 ## Changing References
@@ -38,7 +38,8 @@ p1[0] = 44    ### Modifying p1 also changes p2
 print(p1)     ### Output: [44, 2, 3]
 print(p2)     ### Output: [44, 2, 3]
 
-### Note: If the same reference is assigned to two different variables, changes made to one affect the other.
+> [!NOTE]
+> If the same reference is assigned to two different variables, changes made to one affect the other.
 
 L1 = [1, 2, 3]
 L2 = L1       ### Both L1 and L2 point to the same reference
@@ -47,7 +48,8 @@ L2[0] = 55    ### Modifying L2 does not change L1
 print(L1)     ### Output: [1, 2, 3]
 print(L2)     ### Output: [55, 2, 3]
 
-### Note: If different references are assigned to different variables, changes made to one do not affect the other.
+> [!NOTE]
+> If different references are assigned to different variables, changes made to one do not affect the other.
 
 ## Copying
 
@@ -60,7 +62,8 @@ h3 = h1[:]   ### Copy the entire list h1
 print(h1)    ### Output: [1, 2, 3]
 print(h3)    ### Output: [1, 2, 3]
 
-### Note: Slicing or using the copy module (e.g., copy.copy()) creates a new copy of the list.
+> [!NOTE]
+> Slicing or using the copy module (e.g., copy.copy()) creates a new copy of the list.
 
 ## Checking References
 
@@ -69,9 +72,10 @@ n = m
 print(m == n)  ### Output: True (checks the value)
 print(m is n)  ### Output: True (checks the memory reference)
 
-### Note: The `is` operator checks if two variables reference the same memory location.
+> [!NOTE]
+> The `is` operator checks if two variables reference the same memory location.
 
-### Distinguishing Between `is` and `==`
+## Distinguishing Between `is` and `==`
 
 a = [1, 2, 3]
 b = [1, 2, 3]
