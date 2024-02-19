@@ -1,27 +1,23 @@
-* How Python Allocates Memory
+* **How Python Allocates Memory**
+  - Python dynamically allocates memory when assigning values to variables.
+  - Variables are references to memory locations holding the assigned values.
+  - Reassigning a variable points it to a new memory location without overwriting the existing one.
+  - Python's garbage collector frees memory occupied by unreferenced objects eventually.
 
-    *Python dynamically allocates memory when assigning values to variables.
-    *Variables are references to memory locations holding the assigned values.
-    *Reassigning a variable points it to a new memory location without overwriting the existing one.
-    *Python's garbage collector frees memory occupied by unreferenced objects eventually.
+* **How Python Frees Up Memory**
+  - Python reclaims memory using a garbage collector.
+  - The collector deallocates memory from objects with zero references periodically.
+  - Though not immediate, Python ensures efficient memory usage over time.
 
-* How Python Frees Up Memory
+* **Memory Optimization**
+  - Python optimizes memory by reusing space for immutable objects.
+  - It shares references for identical objects, like integers and strings with the same value.
+  - Copy-on-write mechanisms optimize memory when creating copies of mutable objects.
 
-    Python reclaims memory using a garbage collector.
-    The collector deallocates memory from objects with zero references periodically.
-    Though not immediate, Python ensures efficient memory usage over time.
-
-* Memory Optimization
-
-    Python optimizes memory by reusing space for immutable objects.
-    It shares references for identical objects, like integers and strings with the same value.
-    Copy-on-write mechanisms optimize memory when creating copies of mutable objects.
-
-* Mutable vs. Immutable
-
-    In Python, objects are mutable or immutable:
-    Mutable objects can change post-creation, altering the object's state.
-    Immutable objects cannot change post-creation, creating new objects for modifications.
+* **Mutable vs. Immutable**
+  - In Python, objects are mutable or immutable:
+  - Mutable objects can change post-creation, altering the object's state.
+  - Immutable objects cannot change post-creation, creating new objects for modifications.
 
 
 ## Changing References
