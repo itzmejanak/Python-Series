@@ -1,8 +1,7 @@
-`
-### How Python Allocates Memory
+### *How Python Allocates Memory
 
-### Python dynamically allocates memory when assigning values to variables.
-### Variables are references to memory locations holding the assigned values.
+ Python dynamically allocates memory when assigning values to variables.
+ Variables are references to memory locations holding the assigned values.
 ### Reassigning a variable points it to a new memory location without overwriting the existing one.
 ### Python's garbage collector frees memory occupied by unreferenced objects eventually.
 
@@ -23,7 +22,7 @@
 ### In Python, objects are mutable or immutable:
 ### Mutable objects can change post-creation, altering the object's state.
 ### Immutable objects cannot change post-creation, creating new objects for modifications.
-`
+
 
 ## Changing References
 
