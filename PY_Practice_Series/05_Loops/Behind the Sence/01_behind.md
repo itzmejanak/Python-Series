@@ -4,6 +4,13 @@
 
 This README provides examples of reading files in Python using different methods.
 
+                   iter()
+[ITERATION TOOLS]-----------[ITREABLE OBJECT]
+(FOR, COMPREHENSIION)       (list,file)
+        | next()                 |
+        | next()                 |
+    [__next__] -------------------
+
 ```python
 # Read file "01_problem.py" line by line using file object
 
@@ -56,10 +63,7 @@ f.__next__()  # 'for num in numbers:\n'
 f.__next__()  # 'print("final coun of pos number is: ", positive_number_count)\n'
 
 # Attempting to read beyond the end of the file
-try:
-    f.__next__()
-except StopIteration:
-    pass
+# StopIteration:
 
 # Close the file
 f.close()
@@ -69,13 +73,13 @@ f.close()
 ## `for` Loop
 ```python
 # Using for loop to read file line by line
-for line in open("PY_Practice_Series/05_Loops/01_problem.py"):
+for line in open("01_problem.py"):
     print(line, end='')
 ```
 ## `while` Loop
 ```python
 # Using while loop to read file line by line
-f = open("PY_Practice_Series/05_Loops/Behind the Sence/01_behind.py")
+f = open("01_behind.py")
 while True:
     line = f.readline()
     if not line:
