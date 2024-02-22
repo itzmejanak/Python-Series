@@ -1,10 +1,8 @@
-
+# File Reading Examples
+## Using `readline()` Method
 ```markdown
-File Reading Examples
 
 This README provides examples of reading files in Python using different methods.
-
-## Using `readline()` Method
 
 ```python
 # Read file "01_problem.py" line by line using file object
