@@ -1,9 +1,10 @@
 # File Reading Examples
-## Using `readline()` Method
-```markdown
 
 This README provides examples of reading files in Python using different methods.
 
+____________________________________________________________________________________________________________________________________________________
+# **BEHIND THE SCENE OF OF LOOPS :-**
+______________________________________________________________________________________________________________________________________________________            
                                                                    iter()
                                                 [ITERATION TOOLS]-----------[ITREABLE OBJECT]
                                                 (FOR, COMPREHENSIION)       (list,file)
@@ -13,6 +14,8 @@ This README provides examples of reading files in Python using different methods
                                                         |                        |
                                                       [__next__] -----------------
 
+## Using `readline()` Method
+```markdown
 ```python
 # Read file "01_problem.py" line by line using file object
 
@@ -89,5 +92,4 @@ while True:
     print(line, end='')
 ```
 
-`These examples demonstrate various ways of reading files in Python. Choose the method that suits your use case best.`
-```
+` These examples demonstrate various ways of reading files in Python. Choose the method that suits your use case best.                 `
