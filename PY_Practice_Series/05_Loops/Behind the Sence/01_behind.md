@@ -4,12 +4,14 @@
 
 This README provides examples of reading files in Python using different methods.
 
-                   iter()
-[ITERATION TOOLS]-----------[ITREABLE OBJECT]
-(FOR, COMPREHENSIION)       (list,file)
-        | next()                 |
-        | next()                 |
-    [__next__] -------------------
+                                                                   iter()
+                                                [ITERATION TOOLS]-----------[ITREABLE OBJECT]
+                                                (FOR, COMPREHENSIION)       (list,file)
+                                                        | next()                 |
+                                                        |                        |
+                                                        | next()                 |
+                                                        |                        |
+                                                      [__next__] -----------------
 
 ```python
 # Read file "01_problem.py" line by line using file object
