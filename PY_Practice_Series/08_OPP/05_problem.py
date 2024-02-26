@@ -42,5 +42,5 @@ my_tesla = Electric_car("tesla", "model s", "700kw")
 # print(my_tesla.__brand)                      
 # print(my_tesla.get_brand())          
 
-print("my_car fuel type:", my_car.fule_type())
+# print("my_car fuel type:", my_car.fule_type())
 print("my_tesla fuel type:", my_tesla.fule_type())
