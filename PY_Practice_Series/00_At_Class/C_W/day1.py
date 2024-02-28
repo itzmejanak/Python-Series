@@ -1,4 +1,3 @@
-
 # input from the user 
 num_one = int(input("Enter your first number:  "))
 num_two = int(input("Enter your Second number: "))
