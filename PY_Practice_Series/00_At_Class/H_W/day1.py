@@ -15,15 +15,15 @@ def calculate_equation(a,b,c):
         top_plus = b_val + (-root)
         final_minus_value = top_minus/down_val
         final_plus_value = top_plus/down_val
-        print("The value of x when (-) is: ", float(final_minus_value))
-        print("The value of x when (+) is: ", float(final_plus_value))
+        return final_minus_value, final_plus_value
     else:
-        root  = (-root_inner)**0.5
+        root  = (root_inner)**0.5
         top_minus = b_val - root
         top_plus = b_val + root
         final_minus_value = top_minus/down_val
         final_plus_value = top_plus/down_val
-        print("The value of x when (-) is: ", float(final_minus_value))
-        print("The value of x when (+) is: ", float(final_plus_value))
+        return final_minus_value, final_plus_value
         
-calculate_equation(a,b,c)
+result = calculate_equation(a,b,c)
+print("The value of x when (-) is: ", result[0])
+print("The value of x when (+) is: ", result[1])
