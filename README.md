@@ -1,7 +1,7 @@
 # Python Practice Series
 
 Welcome to the Python Practice Series repository! This repository is designed to help you improve your Python programming skills through a series of exercises and projects.
-
+    - RoadMap: ["python Full Road map"](https://roadmap.sh/python) by Janak Devkota 
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Getting Started](#getting-started)
