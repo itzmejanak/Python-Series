@@ -1,0 +1,241 @@
+____________CHAPET 2 VARIABLES____________
+1. String methods 
+title()  -- use for making the capatilized string
+upper()
+lower()
+
+Striping white space method :-
+rstrip()  
+- it works from RHS means remove white space from right side
+
+lstrip()
+- it works from LHS means remove white space from left side
+
+strip()
+- it works from LHS and RHS means remove white space from left and right side at once 
+
+Removing Prefixes :-
+removeprefix()
+- its takes the part of the string variable as a parameter and remove that one
+
+Avoiding Syntax Errors with Strings
+"One of Python's strengths is its diverse community."  --- this is the correct way
+'One of Python's strengths is its diverse community.'   --- this will throw the error
+
+
+2. Numbers
+a. float
+- When we divide any two numbers, even if they are integers that result in a whole number, we’ll always get a float:
+- if we do any operation with float number and integer result come into float
+
+
+b. Underscores in Numbers
+eg:- 14_000_000_000
+- When we print a number that was defined using underscores, Python prints only the digits
+- This feature works for both integers and floats.
+
+
+
+c. Multiple Assignment :-
+eg:- x, y, z = 0, 0, 0
+-  this technique most often when initializing a set of numbers at sigle line.
+
+
+d. Constants
+- A constant is a variable whose value stays the same throughout the life of a program.
+- all capital letters to indicate a variable should be treated as a constant and never be changed : 
+- eg:- MAX_CONNECTIONS = 5000
+
+
+e. Comments 
+- eg: # Say hello to everyone.
+
+
+f. The Zen of Python
+- means writing good Python code
+- Simple is better than complex.
+- Complex is better than complicated.
+- Readability counts.
+- There should be one-- and preferably only one --obvious way to do it.
+- Now is better than never.
+
+
+____________CHAPET 3 LIST____________
+What Is a List?
+A list is a collection of items in a particular order. 
+
+a. Accessing Elements in a List
+- we can access list in Python by the position, or index
+- eg:- bicycles = ['trek', 'cannondale', 'redline', 'specialized']
+      print(bicycles[0])
+      print(bicycles[-1])   // negetive indexing
+- Index Positions Start at 0, Not 1 
+
+
+b. Using Individual Values from a List
+message = f"My first bicycle was a {bicycles[0].title()}."
+print(message)
+
+
+c. Modifying, Adding, and Removing Elements
+	i. Modifying Elements in a List
+	- list_name[index_num] = 'ducati'
+
+	ii. Adding Elements to a List
+	- list_name.append('ducati')
+	- item always added to RHS
+	
+	iii. Inserting Elements into a Lis
+	- motorcycles.insert(0, 'ducati')
+
+
+	iv. Removing Elements From a List
+	- del motorcycles[0]
+	- permanently deleted
+
+	v. Removing an Item Using the pop() Metho
+	- popped_motorcycle = motorcycles.pop()
+	- temporarly deleted we can reuse it
+	- pop() method remove value from last
+
+
+	vi. Popping Items from Any Position in a List
+	- first_owned = motorcycles.pop(0)
+
+
+	vii. Removing an Item by Value
+	- eg:- motorcycles = ['honda', 'yamaha', 'suzuki', 'ducati']
+	      print(motorcycles)
+	      motorcycles.remove('ducati')
+	- remove method also remove the element from the list temporarly we can reuse it by storing into variable
+	- The remove() method deletes only the first occurrence of the value that we specify. 
+	
+
+d. Organizing a List method
+	i. Sorting a List Permanently with the sort() Method
+	- sort() method changes the order of the list permanently.
+	- short() method change the order accordingly to alphabitacally (eg:- a,b,c,d,e.. so on)
+	- we can also sort this list in reverse-alphabetical order by passing the argument short(reverse=True)
+
+	ii. Sorting a List Temporarily with the sorted() Function
+	- we will do it by this syntax: sorted(cars)
+	- it dosent change the actual list it make it own reference list
+
+	iii. Printing a List in Reverse Order
+	- cars.reverse()
+	- The reverse() method changes the order of a list permanently,
+	- we can revert to the original order anytime by applying reverse()
+
+	iv. Finding the Length of a List
+	-  find the length of a list by using the len() function.
+	- eg:- len(cars)
+
+
+
+e. Avoiding Index Errors When Working with Lists
+- think always list index start from 0
+- always check if our list is empty
+
+
+
+____________CHAPET 4 Working with LIST____________
+
+a. Looping Through an Entire List :-
+-eg:- magicians = ['alice', 'david', 'carolina']
+	for magician in magicians:
+	    print(magician)
+
+	i. A Closer Look at Looping
+	- for magician in magicians: >> this line take each magician as magician into loop at one time
+	- print(magician)  >> it print each magician in each iletration
+
+	ii. Doing More Work Within a for Loop
+	- magicians = ['alice', 'david', 'carolina']
+	  for magician in magicians:
+	      print(f"{magician.title()}, that was a great trick!")
+	- we can print each name with some message
+
+	iii. Doing Something After a for Loop
+	- magicians = ['alice', 'david', 'carolina']
+	  for magician in magicians:
+	     print(f"{magician.title()}, that was a great trick!")
+                print(f"I can't wait to see your next trick, {magician.title()}.\n")
+            print("Thank you, everyone. That was a great magic show!")
+	- we can give some common message to all after the loop
+
+b. Avoiding Indentation Errors
+
+	i. Forgetting to Indent
+	- Always indent the line after the for statement in a loop.
+
+	ii. Forgetting to Indent Additional Lines
+	- This is a logical error
+	- 
+
+	iii. Indenting Unnecessarily
+	- Python informs we about the unexpected indent:
+
+	iv. Indenting Unnecessarily After the Loop
+	- This is another logical error, similar to the one in “Forgetting to Indent Additional Lines”
+
+	v. Forgetting the Colon
+	- you’ll get a syntax error because Python doesn’t know exactly what you’re trying to do.
+
+
+c. Making Numerical Lists
+
+	i. Using the range() Function
+	- eg: for value in range(1, 5):
+		print(value)
+
+	ii. Using range() to Make a List of Number
+	- numbers = list(range(1, 6))
+	  print(numbers)
+	
+	iii. Simple Statistics with a List of Numbers
+	- >>> digits = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+	  >>> min(digits)
+		0
+	  >>> max(digits)
+		9
+	  >>> sum(digits)
+		45
+
+	iv. List Comprehensions
+	- # Example list comprehension without range
+	    numbers = [1, 2, 3, 4, 5]
+	    squared_numbers = [x ** 2 for x in numbers if x % 2 == 0]
+	- # Example list comprehension with range
+	    squared_numbers = [x ** 2 for x in range(1, 6) if x % 2 == 0]
+
+d. Working with Part of a List
+	i. Slicing a List :-  [note: it slice exclusively]
+	- players = ['charles', 'martina', 'michael', 'florence', 'eli']
+	- print(players[0:3])  // slice from 0 index to index 2
+	- print(players[:4])   // select and slice upt0 index 3
+	- print(players[2:])  // select and slice before index 1
+	- print(players[-3:])  // negetive slicing from -3 to 0
+
+	ii. Looping Through a Slice
+	- players = ['charles', 'martina', 'michael', 'florence', 'eli']
+	     for player in players[:3]:
+		 print(player.title())
+
+	iii. Copying a List 
+	- friend_foods = my_foods[:]
+	- copied list changes dosen't leads to change into original one
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
