@@ -34,4 +34,15 @@ def add_numInto_list():
     print("Sum of even numbers: ", sum(evens_nums))
     print("Sum of odd numbers: ", sum(odd_nums))
 
+    # for displaying max and min value
+    max_number = listNumbers[0]
+    min_number = listNumbers[0]
+    for num in listNumbers:
+        if num > max_number:
+            max_number = num
+        if num < min_number:
+            min_number = num
+    print("Max number: ", max_number)
+    print("Min numbers: ", min_number)
+
 add_numInto_list()
