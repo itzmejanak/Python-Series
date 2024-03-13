@@ -37,6 +37,7 @@ def add_numInto_list():
     # for displaying max and min value
     max_number = listNumbers[0]
     min_number = listNumbers[0]
+    
     for num in listNumbers:
         if num > max_number:
             max_number = num
