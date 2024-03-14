@@ -227,12 +227,138 @@ d. Working with Part of a List
 
 
 
+e. Tuples
+-  Python refers to values that cannot change as immutable, and an immutable list is called a tuple.
+
+	i. Defining a Tuple
+	- We can access tuple just like a list.
+	- we cannot change tuples value
+	- eg:- dimensions = (200, 50)
+		print(dimensions[0])
+
+	ii. Looping Through All Values in a Tuple
+	- We can loop tuples just like the list.
+	- eg:- for dimension in dimensions:
+		print(dimension)
+
+	iii. Writing Over a Tuple
+	- we can make the tuple value very nice in looking by giving \n.
+
+
+____________CHAPET 5 IF STATEMENT____________
+a. Conditional Test :- 
+	i. A Simple Example
+	- eg:- cars = ['audi', 'bmw', 'subaru', 'toyota']
+	for car in cars:
+	  1 if car == 'bmw':
+		print(car.upper())
+	  else:
+		print(car.title())
+
+	ii, Conditional Tests
+	- Checking for Equality.
+	  - >>> car = 'bmw'
+	   >>> car == 'bmw'
+	        True
+
+	- Ignoring Case When Checking for Equality
+	  - eg:- >>> car = 'Audi'
+	        >>> car.lower() == 'audi'
+	
+	- Checking for Inequality (!) 
+	  - requested_topping = 'mushrooms'
+	    if requested_topping != 'anchovies':
+	    print("Hold the anchovies!")
+
+	- Numerical Comparisons 
+	  - eg:- >>> age = 18
+	        >>> age == 18
+	        True
+	  - we can use (==, !=, =>, <=)
+
+
+	iii. Checking Multiple Conditions
+	  - Using `and` to Check Multiple Conditions
+	    - age_0 >= 21 and age_1 >= 21
+	      False
+
+	  - Using `or` to Check Multiple Conditions
+	    - >>> age_0 >= 21 or age_1 >= 21
+		True
+
+	
+	iv. Checking Whether a Value Is `in` a List
+	   - eg:- requested_toppings = ['mushrooms', 'onions', 'pineapple']
+		>>> 'mushrooms' in requested_toppings
+		True
+
+	  - Checking Whether a Value Is Not in a List
+	    - banned_users = ['andrew', 'carolina', 'david']
+	      user = 'marie'
+	      if Statements 77
+  	      if user not in banned_users:
+	      print(f"{user.title()}, you can post a response if you wish.")
+             
+
+	v. Boolean Expressions:-
+	   - game_active = True
+	   - can_edit = False
 
 
 
+b. if Statements :- 
+	
+	i. Simple if Statements
+	- eg:- if conditional_test:
+		do something
+
+	ii. if-else Statements
+	- eg:- if conditional_test:
+		do something
+	      else:
+		do this thing
+
+	iii. The if-elif-else Chain
+	- eg:- if conditional_test:
+		do something
+	      elif conditional_test:
+		or do this thing
+	      else:
+		or do this thing
+
+	iv. Using Multiple elif Blocks
+	- Same as The if-elif-else Chain just increases the elif condition
+
+	v. Omitting the else Block
+	- Python does not require an else block at the end of an if-elif chain.
+
+	vi. Testing Multiple Conditions
+	- we can test list element by using if-elif conditions
 
 
+c. Using if Statements with Lists
 
+	i. Checking for Special Items
+	- requested_toppings = ['mushrooms', 'green peppers', 'extra cheese']
+	for requested_topping in requested_toppings:
+	  if requested_topping == 'green peppers':
+ 		print(f"Adding {requested_topping}.")
+	  else:
+		print("\nFinished making your pizza!")
+
+
+	ii. Checking That a List Is Not Empty
+	- requested_toppings = []
+	  if requested_toppings:
+ 	    for requested_topping in requested_toppings:
+ 		print(f"Adding {requested_topping}.")
+  		print("\nFinished making your pizza!")
+	 else:
+	          print("Your list is empty?")
+
+
+	iii. Using Multiple Lists
+	- we can use multiple list with condition
 
 
 
