@@ -361,7 +361,101 @@ c. Using if Statements with Lists
 	- we can use multiple list with condition
 
 
+____________CHAPET 6 DICTIONARIES____________
+
+- Dictionary are not really hard undersand it just by indexes.
+- in list there are default indexes from 0 to n position
+- in Dictionary there is our custom indexes.
+-  key-value pairs.
+
+a. A Simple Dictionary
+	- alien_0 = {'color': 'green', 'points': 5}
+	  print(alien_0['color'])
+	  print(alien_0['points'])
+
+b. Working with Dictionaries
+- alien_0 = {'color': 'green', 'points': 5}
+- key-value pairs. whre color is key and poimts is value
+
+	i. Accessing Values in a Dictionary
+	- alien_0 = {'color': 'green'}
+	  print(alien_0['color'])
+
+	ii. Adding New Key-Value Pairs
+	- alien_0 = {'color': 'green', 'points': 5}
+	  alien_0['x_position'] = 0
+             alien_0['y_position'] = 25
+             print(alien_0)
+
+	iii. Starting with an Empty Dictionary
+	- we can add key and value at same time into Dictionary
+	- alien_0 = {}
+	  alien_0['color'] = 'green'
+	  alien_0['points'] = 5
+
+	iv. Modifying Values in a Dictionary
+	  - alien_0 = {'color': 'green'}
+	    alien_0['color'] = 'yellow'
+
+	v. Removing Key-Value Pairs [ del ]
+	  - Access the index to remove key value pair
+	  - del alien_0['points']
+
+	vi. A Dictionary of Similar Objects
+	  - You can also use a dictionary to store similar kind of information about many objects.
+	  - favorite_languages = {
+	    'jen': 'python',
+	    'sarah': 'c',
+	    'edward': 'rust',
+               'phil': 'python',
+               }
+
+	vii. Using get() Method to Access Values
+	  - Using this method we can access value and if not then can show message
+	  - point_value = alien_0.get('points', 'No point value assigned.')
+	  - you’ll get the corresponding value
+	  - If it doesn’t, you get the default value (we get a clean message instead of an error:)
 
 
+c. Looping Through a Dictionary
+
+	i. Looping Through All Key-Value Pairs
+	  - for key, value in user_0.items():
+	    print(f"\nKey: {key}")
+	     print(f"Value: {value}")
+
+	  - eg:- favorite_languages = {'jen': 'python', 'sarah': 'c', 'edward': 'rust', 'phil': 'python',}
+	        for name, language in favorite_languages.items():
+	        print(f"{name.title()}'s favorite language is {language.title()}.")
+	  - we can access both key and value for in each iteration in loop
+
+
+	ii. Looping Through All the Keys in a Dictionary
+	  - for name in favorite_languages.keys():
+	        print(name.title())
+
+
+	iii. Looping Through a Dictionary’s Keys in a Particular Order
+	  - short() / shorted()
+	  - for name in sorted(favorite_languages.keys()):
+	    print(f"{name.title()}, thank you for taking the poll.")
+
+
+	iv. Looping Through All Values in a Dictionary
+	  - for language in favorite_languages.values():
+	    print(language.title())
+	  - When you wrap set() around a collection of values that contains duplicate items will be remove.
+	  - for language in set(favorite_languages.values())
+
+d. Nesting
+	
+	i. A List of Dictionaries
+	- alien_0 = {'color': 'green', 'points': 5}
+	  alien_1 = {'color': 'yellow', 'points': 10}
+	  alien_2 = {'color': 'red', 'points': 15}
+	  aliens = [alien_0, alien_1, alien_2]
+	  for alien in aliens:
+	  print(alien)
+	- aliens.append(new_alien) // for adding
 
 
