@@ -459,3 +459,96 @@ d. Nesting
 	- aliens.append(new_alien) // for adding
 
 
+	ii. A List in a Dictionary
+	- pizza = {
+		'crust': 'thick',
+		'toppings': ['mushrooms', 'extra cheese'],
+		}
+	- Accesing: - for topping in pizza['toppings']:
+			print(f"\t{topping}")
+	- distanary indexes values are in list so use [] to access them.
+	- dictainory values are in disctainory so use {} to access them
+
+
+	iii. A Dictionary in a Dictionary
+	- List have .keys() and values() method as same dictainory have items()
+	- we use .items() method when we want to excess both key and value of Dictainary 
+	- users = { 'aeinstein': { 'first': 'albert', 'last': 'einstein', 'location': 'princeton'}, 'mcurie': { 'first': 'marie', 'last': 'curie', 'location': 'paris', },}
+	- index can easily access by  - print(f"\nUsername: {username}")
+	- values can easily access by - full_name = f"{user_info['first']} {user_info['last']}"
+	- as i say before dictionary values can be access by [] this braces
+
+
+
+____________CHAPET 7 USER INPUT AND WHILE LOOPS____________
+
+a. How the input() Function Works
+- paue the program while taking input
+- store the inputed value into variable
+- do work for it
+
+	i. Writing Clear Prompts
+	- use clear and open ended sentences for taking input
+
+	ii. Using int() to Accept Numerical Input
+	- by default input method take string so use int method for taking integer
+
+	iii. The Modulo Operator
+	- modulo operator (%), which divides one number by another number and returns the remainder:
+	- eg:-  4 % 3 = 1
+
+
+b. Introducing while Loops
+	i. Using flag
+	ii. The while Loop in Action
+	iii. Letting the User Choose When to Quit
+	iv. Using break to Exit a Loop
+	v. Using continue in a Loop
+	vi. Avoiding Infinite Loops
+	  -        x = 1
+		while x <= 5:
+		print(x)
+		x += 1   // if this value ommited then its go infinite
+
+
+c. Using a while Loop with Lists and Dictionaries
+	
+	i. Moving Items from One List to Another
+	- unconfirmed_users = ['alice', 'brian', 'candace']
+	  confirmed_users = []
+	- while unconfirmed_users:
+		current_user = unconfirmed_users.pop()
+		confirmed_users.append(current_user)
+
+
+	ii. Removing All Instances of Specific Values from a List
+	- pets = ['dog', 'cat', 'dog', 'goldfish', 'cat', 'rabbit', 'cat']
+	  while 'cat' in pets:
+	      pets.remove('cat')
+	  print(pets)
+
+	iii. Filling a Dictionary with User Input
+	- set flag
+	- teake input 
+	- modify flag when needed
+
+
+____________CHAPET 8 FUNCTIONS____________
+
+a. Defining a Function
+- def greet_user():
+      print("Hello!")
+greet_user()
+
+
+
+
+
+
+
+
+
+
+
+
+
